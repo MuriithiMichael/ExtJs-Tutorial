@@ -4,5 +4,11 @@
 Ext.define('Insurance.store.staticData.Languages', {
     extend: 'Ext.data.Store',
 
+    requires: [
+        'Insurance.model.staticData.Language'
+    ],
+
+    autoLoad: true,
+
     model: 'Insurance.model.staticData.Language'
 });

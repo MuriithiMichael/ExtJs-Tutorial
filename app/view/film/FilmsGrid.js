@@ -5,11 +5,6 @@ Ext.define('Insurance.view.film.FilmsGrid', {
     extend: 'Insurance.view.base.Grid',
     xtype: 'films-grid',
 
-    requires: [
-        'Insurance.view.film.FilmsModel',
-		'Insurance.view.film.FilmsController'
-    ],
-
     bind: '{films}',
 
     reference: 'filmsGrid',
@@ -34,8 +29,8 @@ Ext.define('Insurance.view.film.FilmsGrid', {
             width: 100,
             dataIndex: 'language_id',
             renderer: function(value, metaData, record){
-                var languageStore = Ext.getStore('staticData.Languages');
-                var lang = languageStore.findRecord('language_id', value);
+                var languagesStore = Ext.getStore('staticData.Languages');
+                var lang = languagesStore.findRecord('language_id', value);
                 return lang != null ? lang.get('name') : value;
             }
         },
@@ -83,6 +78,11 @@ Ext.define('Insurance.view.film.FilmsGrid', {
             displayMsg: 'Displaying films {0} - {1} of {2}',
             emptyMsg: "No films to display"
         }
-    ]
+    ],
+
+    listeners: {
+        itemclick: 'onItemClick',
+        selectfilm: 'onFilmSelect'
+    }
 
 });

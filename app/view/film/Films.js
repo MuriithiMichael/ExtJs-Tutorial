@@ -49,13 +49,12 @@ Ext.define('Insurance.view.film.Films', {
                     xtype: 'film-actors',
                     flex: 2
                 }
-            ],
-
-            dockedItems: [
-                {
-                    xtype: 'top-tool-bar'
-                }
             ]
+        }
+    ],
+    dockedItems: [
+        {
+            xtype: 'top-tool-bar'
         }
     ]
 });

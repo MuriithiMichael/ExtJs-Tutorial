@@ -4,6 +4,7 @@
 Ext.define('Insurance.store.staticData.Categories', {
     extend: 'Ext.data.Store',
 
+    alias: 'store.categories',
 
     model: 'Insurance.model.staticData.Category'
 

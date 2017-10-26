@@ -8,7 +8,8 @@ Ext.define('Insurance.model.Base', {
         'Ext.data.proxy.Ajax',
         'Ext.data.reader.Json',
         'Ext.data.writer.Json',
-        'Insurance.util.Util'
+        'Insurance.util.Util',
+        'Insurance.ux.data.writer.AssociatedWriter'
     ],
 
     schema: {
@@ -27,7 +28,7 @@ Ext.define('Insurance.model.Base', {
                 rootProperty: 'data'
             },
             writer:{
-                type: 'json',
+                type: 'associatedjson',
                 writeAllFields: true,
                 encode: true,
                 rootProperty: 'data',

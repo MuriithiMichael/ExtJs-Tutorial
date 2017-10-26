@@ -47,6 +47,7 @@ Ext.define('Insurance.view.base.Grid', {
                     widget: {
                         xtype: 'button',
                         glyph: Insurance.util.Glyphs.getGlyph('destroy'),
+                        tooltip: 'Delete',
                         handler: 'onDelete'
                     }
                 }

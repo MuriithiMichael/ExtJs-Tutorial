@@ -12,7 +12,7 @@ $start = $_REQUEST['start'];
 $limit = $_REQUEST['limit'];
 $query = $_REQUEST['query'];
 //select the information
-$sql = "SELECT * FROM actor_info ";
+$sql = "SELECT * FROM actor ";
 $sql .= "WHERE first_name LIKE '%" . $query . "%' OR ";
 $sql .= "last_name LIKE '%" . $query . "%' ";
 $sql .= "LIMIT $start,  $limit";
@@ -24,7 +24,7 @@ if ($resultDb = $mysqli->query($sql)) {
     $resultDb->close();
 }
 //count total records from table for paging
-$sql = "SELECT count(*) as num FROM actor_info ";
+$sql = "SELECT count(*) as num FROM actor ";
 $sql .= "WHERE first_name LIKE '%" . $query . "%' OR ";
 $sql .= "last_name LIKE '%" . $query . "%' ";
 $total = 0;

@@ -34,6 +34,28 @@ Ext.define('Insurance.view.base.ViewController', {
       });
     },
 
+    viewSessionChanges: function () {
+        var changes= this.getView.getSession().getChanges();
+        if(changes !== null){
+            new Ext.window.Window({
+                autoShow: true,
+                title: 'Session Changes',
+                modal: true,
+                width: 600,
+                height: 400,
+                layout: 'fit',
+                items: [
+                    {
+                        xtype: 'textarea',
+                        value: JSON.stringify(changes, nul, 4)
+                    }
+                ]
+            });
+        }else{
+            Ext.Msg.alert('No changes', 'There is no changes to teh session.');
+        }
+    },
+
     /**
      * Called when the view is created
      */
