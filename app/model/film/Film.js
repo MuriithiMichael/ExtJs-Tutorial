@@ -8,6 +8,8 @@ Ext.define('Insurance.model.film.Film', {
 
     idProperty: 'film_id',
 
+    identifier: 'sequential',
+
     fields: [
         { name: 'film_id'},
         { name: 'title'},

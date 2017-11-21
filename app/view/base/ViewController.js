@@ -35,7 +35,7 @@ Ext.define('Insurance.view.base.ViewController', {
     },
 
     viewSessionChanges: function () {
-        var changes= this.getView.getSession().getChanges();
+        var changes= this.getView().getSession().getChanges();
         if(changes !== null){
             new Ext.window.Window({
                 autoShow: true,
@@ -47,12 +47,12 @@ Ext.define('Insurance.view.base.ViewController', {
                 items: [
                     {
                         xtype: 'textarea',
-                        value: JSON.stringify(changes, nul, 4)
+                        value: JSON.stringify(changes, null, 4)
                     }
                 ]
             });
         }else{
-            Ext.Msg.alert('No changes', 'There is no changes to teh session.');
+            Ext.Msg.alert('No changes', 'There is no changes to the session.');
         }
     },
 

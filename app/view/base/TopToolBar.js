@@ -20,6 +20,33 @@ Ext.define('Insurance.view.base.TopToolBar', {
             listeners: {
                 click: 'onAdd'
             }
+        },
+        {
+            xtype: 'tbseparator'
+        },
+        {
+            xtype: 'button',
+            text: 'Print',
+            glyph: Insurance.util.Glyphs.getGlyph('print'),
+            listeners: {
+                click: 'onPrint'
+            }
+        },
+        {
+            xtype: 'button',
+            text: 'Export to PDF',
+            glyph: Insurance.util.Glyphs.getGlyph('pdf'),
+            listeners: {
+                click: 'onExportPdf'
+            }
+        },
+        {
+            xtype: 'button',
+            text: 'Export to Excel',
+            glyph: Insurance.util.Glyphs.getGlyph('excel'),
+            listeners: {
+                click: 'onExportExcel'
+            }
         }
     ]
 });

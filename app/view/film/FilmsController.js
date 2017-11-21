@@ -6,6 +6,9 @@ Ext.define('Insurance.view.film.FilmsController', {
     alias: 'controller.films',
 
     requires: [
+        'Insurance.model.film.Film',
+        'Insurance.util.Glyphs',
+        'Insurance.ux.grid.Printer',
         'Insurance.view.film.FilmSearchActor'
     ],
 
@@ -43,14 +46,16 @@ Ext.define('Insurance.view.film.FilmsController', {
             viewModel: {
                 data: {
                     title: record ? 'Edit:' + record.get('title') : 'Add Film',
-                    glyph: record ? glyphs.getGlyph('edit') : glyphs.getGlyph('add')
-                },
-                links: {
-                    currentFilm: record || {
-                        type: 'Film',
-                        create: true
-                    }
+                    glyph: record ? glyphs.getGlyph('edit') : glyphs.getGlyph('add'),
+                    currentFilm: record || Ext.create('Insurance.model.film.Film')
                 }
+                // ,
+                // links: {
+                //     currentFilm: record || {
+                //         type: 'Film',
+                //         create: true
+                //     }
+                // }
             },
             session: true
         });
@@ -120,8 +125,8 @@ Ext.define('Insurance.view.film.FilmsController', {
             autoLoad: true
         });
         if(actorsStore.getCount()==0){
-            store2.add(model);
-            actorsStore = store2;
+            newStore.add(model);
+            actorsStore = newStore;
             actorsGrid.setStore(actorsStore);
         }else{
             if(model){
@@ -131,5 +136,35 @@ Ext.define('Insurance.view.film.FilmsController', {
         }
         me.onCancelActors();
     },
+
+    onExportPdf: function (button, e, options) {
+        var mainPanel = Ext.ComponentQuery.query('mainpanel')[0];
+
+        var newTab = mainPanel.add({
+            xtype: 'panel',
+            closable: true,
+            glyph: Insurance.util.Glyphs.getGlyph('pdf'),
+            title: 'Films PDF',
+            layout: 'fit',
+            html: 'Loading PDF.....',
+            items: [{
+                xtype: 'uxiframe',
+                //src: 'http://www.flashscore.com/'
+                src: 'php/pdf/exportFilmsPdf.php'
+                }]
+        });
+
+        mainPanel.setActiveTab(newTab);
+    },
+
+    onExportExcel: function (button, e, options) {
+        window.open('php/pdf/exportFilmsExcel.php');
+    },
+
+    onPrint: function (button, e, options) {
+        var printer = Insurance.ux.grid.Printer;
+        printer.printAutomatically = false;
+        printer.print(this.lookupReference('filmsGrid'));
+    }
 
 });

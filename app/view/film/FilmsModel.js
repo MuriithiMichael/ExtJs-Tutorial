@@ -70,6 +70,7 @@ Ext.define('Insurance.view.film.FilmsModel', {
             },
             set: function (value) {
                 if(value){
+                    console.log(this.get('{currentFilm}'));
                     this.get('currentFilm').set('special_features', value.join());
                 }
             }

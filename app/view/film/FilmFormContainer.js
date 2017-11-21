@@ -104,7 +104,7 @@ Ext.define('Insurance.view.film.FilmFormContainer', {
             publishes: 'value',
             stacked: true,
             bind: {
-                value: '{specialFeatures}',
+                value: '{currentFilm.special_features}',
                 store: '{special_features}'
             }
         },
