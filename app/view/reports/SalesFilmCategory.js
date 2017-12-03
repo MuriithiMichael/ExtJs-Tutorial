@@ -55,19 +55,19 @@ Ext.define('Insurance.view.reports.SalesFilmCategory',{
                             xtype: 'menuitem',
                             text: 'Pie',
                             itemId: 'pie',
-                            glyph: Insurance.util.Glyphs.getGlyph('chartPie'),
+                            glyph: Insurance.util.Glyphs.getGlyph('chartPie')
                         },
                         {
                             xtype: 'menuitem',
                             text: 'Column',
                             itemId: 'column',
-                            glyph: Insurance.util.Glyphs.getGlyph('chartColumn'),
+                            glyph: Insurance.util.Glyphs.getGlyph('chartColumn')
                         },
                         {
                             xtype: 'menuitem',
                             text: 'Bar',
                             itemId: 'bar',
-                            glyph: Insurance.util.Glyphs.getGlyph('chartBar'),
+                            glyph: Insurance.util.Glyphs.getGlyph('chartBar')
                         }
                     ]
 

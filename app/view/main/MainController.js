@@ -13,6 +13,10 @@ Ext.define('Insurance.view.main.MainController', {
         'Insurance.util.Util'
     ],
 
+    init: function () {
+      Insurance.app.createController('Root');
+    },
+
     onLogout: function (button, e, options) {
         var me = this;
         Ext.Ajax.request({

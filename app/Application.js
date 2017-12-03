@@ -33,6 +33,7 @@ Ext.define('Insurance.Application', {
     enableQuickTips: true,
 
     controllers:[
+        //'Root',
         'Menu',
         'StaticData'
     ],
@@ -40,6 +41,8 @@ Ext.define('Insurance.Application', {
     stores: [
         // TODO: add global / shared stores here
     ],
+
+    defaultToken: 'home',
 
     views:[
         'login.Login'

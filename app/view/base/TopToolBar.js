@@ -6,7 +6,8 @@ Ext.define('Insurance.view.base.TopToolBar', {
     xtype: 'top-tool-bar',
 
     requires: [
-        'Insurance.util.Glyphs'
+        'Insurance.util.Glyphs',
+        'Insurance.view.base.CustomButton'
     ],
 
     dock: 'top',
@@ -25,7 +26,7 @@ Ext.define('Insurance.view.base.TopToolBar', {
             xtype: 'tbseparator'
         },
         {
-            xtype: 'button',
+            xtype: 'custom-btn',
             text: 'Print',
             glyph: Insurance.util.Glyphs.getGlyph('print'),
             listeners: {
@@ -33,7 +34,7 @@ Ext.define('Insurance.view.base.TopToolBar', {
             }
         },
         {
-            xtype: 'button',
+            xtype: 'custom-btn',
             text: 'Export to PDF',
             glyph: Insurance.util.Glyphs.getGlyph('pdf'),
             listeners: {
@@ -41,7 +42,7 @@ Ext.define('Insurance.view.base.TopToolBar', {
             }
         },
         {
-            xtype: 'button',
+            xtype: 'custom-btn',
             text: 'Export to Excel',
             glyph: Insurance.util.Glyphs.getGlyph('excel'),
             listeners: {

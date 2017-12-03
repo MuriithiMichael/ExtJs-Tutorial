@@ -6,7 +6,8 @@ Ext.define('Insurance.view.main.Header', {
     xtype: 'appheader',
 
     requires:[
-        'Insurance.view.locale.Translation'
+        'Insurance.view.locale.Translation',
+        'Insurance.view.main.ResponsiveMenuButton'
     ],
 
     ui: 'footer',
@@ -25,6 +26,8 @@ Ext.define('Insurance.view.main.Header', {
     },{
         xtype: 'tbfill'
 
+    },{
+        xtype: 'responsive-mainmenu'
     },{
         xtype: 'translation'
     },{

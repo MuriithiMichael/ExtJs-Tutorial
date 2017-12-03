@@ -56,22 +56,7 @@ Ext.define('Insurance.controller.Menu', {
     },
     
     onTreePanelItemClick: function (view, record, item, index, event, options) {
-        var mainPanel = this.getMainPanel();
-
-        var newTab = mainPanel.items.findBy(
-            function(tab) {
-                return tab.title == record.get('text');
-            });
-
-        if(!newTab){
-            newTab = mainPanel.add({
-                xtype: record.get('className'),
-                closable: true,
-                glyph: record.get('glyph'),
-                title: record.get('text')
-            });
-        }
-        mainPanel.setActiveTab(newTab);
+        this.redirectTo(record.get('className'));
     },
 
     init: function(application) {

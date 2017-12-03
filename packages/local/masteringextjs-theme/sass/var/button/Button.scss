@@ -1,0 +1,117 @@
+$insurance-background-color: #669999 !default;
+$insurance-mate-gradient: 'matte' !default;
+$insurance-light-color: #339933 !default;
+$insurance-dark-color: #006600 !default;
+
+$button-default-base-color: $insurance-background-color;
+$button-default-base-color-over: $insurance-dark-color;
+$button-default-base-color-pressed: $insurance-dark-color;
+$button-default-base-color-disabled: mix(#000, $insurance-dark-color, 8%);
+$button-default-border-color: $insurance-dark-color !default;
+
+$button-small-font-weight: bold !default;
+$button-medium-font-weight: bold !default;
+$button-large-font-weight: bold !default;
+
+$button-default-color: #fff !default;
+
+$button-default-glyph-color: $button-default-color;
+
+$button-small-border-radius:  1px !default;
+$button-medium-border-radius:  1px !default;
+$button-large-border-radius:  1px !default;
+
+$button-default-background-gradient: $insurance-mate-gradient;
+$button-default-background-gradient-disabled: $insurance-mate-gradient;
+$button-default-background-gradient-over: $insurance-mate-gradient;
+$button-default-background-gradient-pressed: $insurance-mate-gradient;
+
+$button-toolbar-border-color: $insurance-background-color;
+
+$button-toolbar-background-color: $insurance-light-color;
+$button-toolbar-background-color-over: $insurance-dark-color;
+$button-toolbar-background-color-pressed: $insurance-dark-color;
+$button-toolbar-background-color-disabled: mix(#000, $insurance-dark-color, 8%);
+
+$button-toolbar-color: #fff !default;
+
+$button-toolbar-background-gradient: $insurance-mate-gradient;
+$button-toolbar-background-gradient-disabled: $insurance-mate-gradient;
+$button-toolbar-background-gradient-focus: $insurance-mate-gradient;
+$button-toolbar-background-gradient-over: $insurance-mate-gradient;
+$button-toolbar-background-gradient-pressed: $insurance-mate-gradient;
+
+$button-default-glyph-color: #fff !default;
+
+
+//UI for Gray Button START--------------------------------------------------------------------------------------
+$button-insurance-custom-color: #336600 !default;
+$insurance-custom-base-color: #C2E0D1 !default;
+
+$button-insurance-custom-small-border-radius: $button-small-border-radius;
+$button-insurance-custom-small-border-width: 1px;
+
+$button-insurance-custom-base-color: $insurance-custom-base-color;
+$button-insurance-custom-base-color-over: $insurance-dark-color;
+$button-insurance-custom-base-color-focus: $insurance-dark-color;
+$button-insurance-custom-base-color-pressed: $insurance-dark-color;
+$button-insurance-custom-base-color-disabled: lighten($button-insurance-custom-base-color, 40%);
+
+$button-insurance-custom-small-border-radius: 0px;
+$button-insurance-custom-small-border-width: 1px;
+
+$button-insurance-custom-border-color: darken($button-insurance-custom-base-color, 20%);
+$button-insurance-custom-border-color-over: $button-insurance-custom-border-color;
+$button-insurance-custom-border-color-focus: $button-insurance-custom-border-color;
+$button-insurance-custom-border-color-pressed: $button-insurance-custom-border-color;
+$button-insurance-custom-border-color-disabled: lighten($button-insurance-custom-border-color, 40%);
+
+$button-insurance-custom-small-padding: 2px;
+$button-insurance-custom-small-text-padding: 4px;
+
+$button-insurance-custom-background-color: $button-insurance-custom-base-color;
+$button-insurance-custom-background-color-over: $button-insurance-custom-border-color;
+$button-insurance-custom-background-color-focus: $button-insurance-custom-background-color;
+$button-insurance-custom-background-color-pressed: $button-insurance-custom-base-color-pressed;
+$button-insurance-custom-background-color-disabled: $button-insurance-custom-base-color-disabled;
+
+$button-insurance-custom-background-gradient: 'mate';
+$button-insurance-custom-background-gradient-over: 'mate';
+$button-insurance-custom-background-gradient-focus: 'mate';
+$button-insurance-custom-background-gradient-pressed: 'mate-reverse';
+$button-insurance-custom-background-gradient-disabled: 'mate';
+
+$insurance-custom-font-size: 12px;
+$insurance-custom-font-family: helvetica, arial, verdana, sans-serif;
+
+$button-insurance-custom-color-over: #fff !default;
+$button-insurance-custom-color-focus: $button-insurance-custom-color-over;
+$button-insurance-custom-color-pressed: $button-insurance-custom-color-over;
+$button-insurance-custom-color-disabled: $button-insurance-custom-color-over;
+
+$button-insurance-custom-small-font-size: $insurance-custom-font-size;
+$button-insurance-custom-small-font-size-over: $insurance-custom-font-size;
+$button-insurance-custom-small-font-size-focus: $insurance-custom-font-size;
+$button-insurance-custom-small-font-size-pressed: $insurance-custom-font-size;
+$button-insurance-custom-small-font-size-disabled: $insurance-custom-font-size;
+
+$button-insurance-custom-small-font-weight: $button-small-font-weight;
+$button-insurance-custom-small-font-weight-over: $button-small-font-weight;
+$button-insurance-custom-small-font-weight-focus: $button-small-font-weight;
+$button-insurance-custom-small-font-weight-pressed: $button-small-font-weight;
+$button-insurance-custom-small-font-weight-disabled: $button-small-font-weight;
+
+$button-insurance-custom-small-font-family: $insurance-custom-font-family;
+$button-insurance-custom-small-font-family-over: $insurance-custom-font-family;
+$button-insurance-custom-small-font-family-focus: $insurance-custom-font-family;
+$button-insurance-custom-small-font-family-pressed: $insurance-custom-font-family;
+$button-insurance-custom-small-font-family-disabled: $insurance-custom-font-family;
+
+$button-insurance-custom-small-icon-size: 16px;
+$button-insurance-custom-glyph-color: $button-insurance-custom-color;
+$button-insurance-custom-glyph-opacity: .5;
+$button-insurance-custom-small-arrow-width: 12px;
+$button-insurance-custom-small-arrow-height: 12px;
+$button-insurance-custom-small-split-width: 14px;
+$button-insurance-custom-small-split-height: 14px;
+//UI for Gray Button END-----------------------------------------------------------------------------------

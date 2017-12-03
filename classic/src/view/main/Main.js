@@ -13,11 +13,13 @@ Ext.define('Insurance.view.main.Main', {
     xtype: 'app-main',
 
     requires: [
+        'Ext.plugin.Responsive',
+        'Ext.plugin.Viewport',
         'Insurance.view.main.Footer',
         'Insurance.view.main.Header',
-        'Insurance.view.main.Panel',
         'Insurance.view.main.MainController',
         'Insurance.view.main.MainModel',
+        'Insurance.view.main.Panel',
         'Insurance.view.menu.Accordion'
     ],
 
@@ -40,7 +42,16 @@ Ext.define('Insurance.view.main.Main', {
         xtype: 'appfooter'
     },{
         region: 'west',
-        xtype: 'mainmenu'
+        xtype: 'mainmenu',
+        plugins: 'responsive',
+        responsiveConfig: {
+            'width < 768 && tall': {
+                visible: false
+            },
+            'width >= 768': {
+                visible: true
+            }
+        }
     }]
 
 });

@@ -1,0 +1,60 @@
+@include extjs-button-ui(
+  $ui: 'custom-btn-small',
+
+  $border-radius: $button-insurance-custom-small-border-radius,
+  $border-width: $button-insurance-custom-small-border-width,
+
+  $border-color: $button-insurance-custom-border-color,
+  $border-color-over: $button-insurance-custom-border-color-over,
+  $border-color-focus: $button-insurance-custom-border-color-focus,
+  $border-color-pressed: $button-insurance-custom-border-color-pressed,
+  $border-color-disabled: $button-insurance-custom-border-color-disabled,
+
+  $padding: $button-insurance-custom-small-padding,
+  $text-padding: $button-insurance-custom-small-text-padding,
+
+  $background-color: $button-insurance-custom-background-color,
+  $background-color-over: $button-insurance-custom-background-color-over,
+  $background-color-focus: $button-insurance-custom-background-color-focus,
+  $background-color-pressed: $button-insurance-custom-background-color-pressed,
+  $background-color-disabled: $button-insurance-custom-background-color-disabled,
+
+  $background-gradient: $button-insurance-custom-background-gradient,
+  $background-gradient-over: $button-insurance-custom-background-gradient-over,
+  $background-gradient-focus: $button-insurance-custom-background-gradient-focus,
+  $background-gradient-pressed: $button-insurance-custom-background-gradient-pressed,
+  $background-gradient-disabled: $button-insurance-custom-background-gradient-disabled,
+
+  $color: $button-insurance-custom-color,
+  $color-over: $button-insurance-custom-color-over,
+  $color-focus: $button-insurance-custom-base-color-focus,
+  $color-pressed: $button-insurance-custom-color-pressed,
+  $color-disabled: $button-insurance-custom-color-disabled,
+
+  $font-size: $button-insurance-custom-small-font-size,
+  $font-size-over: $button-insurance-custom-small-font-size-over,
+  $font-size-focus: $button-insurance-custom-small-font-size-focus,
+  $font-size-pressed: $button-insurance-custom-small-font-size-pressed,
+  $font-size-disabled: $button-insurance-custom-small-font-size-disabled,
+
+  $font-weight: $button-insurance-custom-small-font-weight,
+  $font-weight-over: $button-insurance-custom-small-font-weight-over,
+  $font-weight-focus: $button-insurance-custom-small-font-weight-focus,
+  $font-weight-pressed: $button-insurance-custom-small-font-weight-pressed,
+  $font-weight-disabled: $button-insurance-custom-small-font-weight-disabled,
+
+  $font-family: $button-insurance-custom-small-font-family,
+  $font-family-over: $button-insurance-custom-small-font-family-over,
+  $font-family-focus: $button-insurance-custom-small-font-family-focus,
+  $font-family-pressed: $button-insurance-custom-small-font-family-pressed,
+  $font-family-disabled: $button-insurance-custom-small-font-family-disabled,
+
+  $icon-size: $button-insurance-custom-small-icon-size,
+  $glyph-color: $button-insurance-custom-glyph-color,
+  $arrow-width: $button-insurance-custom-small-arrow-width,
+  $arrow-height: $button-insurance-custom-small-arrow-height,
+  $split-width: $button-insurance-custom-small-split-width,
+  $split-height: $button-insurance-custom-small-split-height,
+  $opacity-disabled:  $button-opacity-disabled,
+  $inner-opacity-disabled: $button-inner-opacity-disabled
+);
